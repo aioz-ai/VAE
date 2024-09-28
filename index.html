@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="GDANCE, a new large-scale dataset for music-driven group dance generation.">
+  <meta name="keywords" content="GDANCE, Gdance, AIOZ, AIOZ AI">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scalable Group Choreography via Variational Phase Manifold Learning</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/aioz.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Scalable Group Choreography via Variational Phase Manifold Learning</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://minhnhatvt.github.io/">Nhat Le</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=qCcSKkMAAAAJ&hl=en">Tuong Do</a><sup>1</sup>,
+            </span>
+			<span class="author-block">
+              <a href="">Khoa Do</a><sup>1</sup>,
+            </span>
+			<span class="author-block">
+              <a href="">Xuan Bui</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sg.linkedin.com/in/erman-tjiputra">Erman Tjiputra</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=DbAThEgAAAAJ&hl=en">Quang D. Tran</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://cgi.csc.liv.ac.uk/~anguyen/">Anh Nguyen</a><sup>2</sup>,
+            </span>
+          </div>
+      <!--/ Intro Image. -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup><b>AIOZ, Singapore</b></span><br />
+            <span class="author-block"><sup>2</sup><b>VNUHCM-University of Science, Vietnam</b></span><br />
+			<span class="author-block"><sup>3</sup><b>University of Liverpool, UK</b></span>
+          </div>
+	<div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src="static/figures/Intro.gif" alt="cars peace"/>
+      </div>
+    </div>
+          <div class=" is-centered has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. 
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>-->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                  </a>
+              </span> -->
+              <!-- Video. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Video</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+<div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+		<div class="column is-four-fifths">
+			<h2 class="title is-3">Abstract</h2>
+				<div class="content has-text-justified">
+					Generating group dance motion from the music is a challenging task with several industrial applications. Although several methods have been proposed to tackle this problem, most of them prioritize optimizing the fidelity in dancing movement, constrained by predetermined dancer counts in datasets. This limitation impedes adaptability to real-world applications. Our study addresses the scalability problem in group choreography while preserving naturalness and synchronization. In particular, we propose a phase-based variational generative model for group dance generation on learning a generative manifold. Our method achieves high-fidelity group dance motion and enables the generation with an unlimited number of dancers while consuming only a minimal and constant amount of memory. The intensive experiments on two public datasets show that our proposed method outperforms recent state-of-the-art approaches by a large margin and is scalable to a great number of dancers beyond the training data.         
+				</div>
+		</div>
+    </div>
+    
+	<section class="section">
+      <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+			<div class="column is-four-fifths">
+				<div class="publication-video">
+					<video src="static/figures/Demo.mp4" type="video/mp4" controls></video>
+				</div>
+			</div>
+        </div>   
+    </section> 
+
+	<section class="section">
+		<div class="container ">
+        <!-- Dataset. -->
+			<div class="columns is-centered has-text-centered">
+				<div class="column is-four-fifths">
+					<h2 class="title">Method</h2>
+					<div class="content has-text-justified">
+						In this paper, our goal is to develop a scalable technique for group dance generation, a phase-based variational generative model for scalable group dance generation, namely Phase-conditioned Dance VAE (PDVAE). To our knowledge, PDVAE is the first method to represent the variational latent space using phase parameters in the frequency domain of the motion curves.  Our method goes beyond the conventional VAE approach that typically relies on a single latent vector drawn from a Gaussian distribution, which is unable to adequately represent the temporal information of the motion sequence (e.g., the time dimension is squeezed out). 
+					</div>
+					<div class="publication-video">
+						<img src="static/figures/baseline.png" alt="cars peace"/>
+					</div>
+					
+				</div> 
+			</div>
+		</div>
+	</section>
+	
+ 
+    <section class="section" id="BibTeX">
+		<div class="container is-max-desktop content">
+			<h2 class="title">BibTeX</h2>
+			<pre><code>Soon
+			</code></pre>
+		</div>
+    </section>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template was borrowed from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We would like to thank Keunhong Park for sharing the template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
